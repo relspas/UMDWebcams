@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UMD Webcam Map</title>
+    <meta name="viewport" content="initial-scale=1.0"/>
+    <meta charset="utf-8"/>
+    <meta property="og:site_name" content="UMD Webcams"/>
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/a/a1/Three_Surveillance_cameras.jpg"/>
+    <meta property="og:title" content="UMD Webcams"/>
+    <link rel="image_src" href="https://upload.wikimedia.org/wikipedia/commons/a/a1/Three_Surveillance_cameras.jpg" />
+
+
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script src="webcamlistjs2.js"></script>
+    <script src="webcamsjs2.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE&callback=initMap"
+    async defer></script>
+  </body>
+</html>
